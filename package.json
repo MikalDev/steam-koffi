@@ -1,0 +1,54 @@
+{
+  "name": "steamworks-node",
+  "version": "0.1.0",
+  "description": "Modern ESM npm package for integrating Node.js applications with the Steamworks API",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    }
+  },
+  "files": [
+    "lib",
+    "steam_bin"
+  ],
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "npm run clean && tsc",
+    "dev": "tsc --watch",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:basic": "npm run build && node examples/basic.js"
+  },
+  "keywords": [
+    "steam",
+    "steamworks",
+    "node",
+    "electron",
+    "nwjs",
+    "ffi",
+    "koffi"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^22.13.5",
+    "koffi": "^2.10.1",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
