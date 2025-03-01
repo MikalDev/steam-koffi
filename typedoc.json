@@ -1,0 +1,12 @@
+{
+  "entryPointStrategy": "expand",
+  "entryPoints": ["./src"],
+  "out": "docs",
+  "name": "Steamworks Node.js API",
+  "includeVersion": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeExternals": true,
+  "readme": "README.md",
+  "plugin": ["typedoc-plugin-markdown"]
+} 
