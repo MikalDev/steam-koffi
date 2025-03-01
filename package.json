@@ -1,5 +1,5 @@
 {
-  "name": "steamworks-node",
+  "name": "steamworks-koffi",
   "version": "0.1.0",
   "description": "Modern ESM npm package for integrating Node.js applications with the Steamworks API",
   "type": "module",
